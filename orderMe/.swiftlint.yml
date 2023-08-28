@@ -1,0 +1,9 @@
+excluded:
+  - orderMe
+  
+disabled_rules:
+  - trailing_whitespace
+  - shorthand_operator
+  - force_cast
+  - identifier_name
+  - line_length
