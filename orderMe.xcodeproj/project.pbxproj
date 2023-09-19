@@ -278,12 +278,10 @@
 				2B2EA7651CBB0377001507DD /* Sources */,
 				2B2EA7661CBB0377001507DD /* Frameworks */,
 				2B2EA7671CBB0377001507DD /* Resources */,
-				22F01ADB23553F82009CCDF0 /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				889392842A978D0D00D44D65 /* PBXTargetDependency */,
 			);
 			name = orderMe;
 			packageProductDependencies = (
@@ -334,7 +332,6 @@
 				A7140F152A96CB16007FF2D6 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 				A7140F182A96CB4F007FF2D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				A7140F1B2A96D0D1007FF2D6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
-				889392852A97C47100D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 2B2EA76A1CBB0377001507DD /* Products */;
 			projectDirPath = "";
@@ -357,28 +354,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		22F01ADB23553F82009CCDF0 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# cd $(git rev-parse --show-toplevel)\n# swiftlint lint --config ./.swiftlint.yml\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B2EA7651CBB0377001507DD /* Sources */ = {
@@ -429,13 +404,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		889392842A978D0D00D44D65 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 889392832A978D0D00D44D65 /* SwiftLintPlugin */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2B2EA7791CBB0377001507DD /* Debug */ = {
@@ -631,22 +599,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		889392822A978CDB00D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:realm/SwiftLint.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.52.4;
-			};
-		};
-		889392852A97C47100D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.52.4;
-			};
-		};
 		A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
@@ -682,11 +634,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		889392832A978D0D00D44D65 /* SwiftLintPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 889392822A978CDB00D44D65 /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintPlugin";
-		};
 		A7140EFC2A96C57A007FF2D6 /* ObjectMapper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A7140EFB2A96C57A007FF2D6 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
