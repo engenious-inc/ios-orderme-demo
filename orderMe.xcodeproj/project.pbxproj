@@ -57,7 +57,18 @@
 		A7140F1F2A96D0D1007FF2D6 /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F1E2A96D0D1007FF2D6 /* FacebookGamingServices */; };
 		A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
 		A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
+		A72F69FA2AE6AD18001ED684 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F69F92AE6AD18001ED684 /* OrderMEUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A72F69FD2AE6AD18001ED684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2EA7611CBB0377001507DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2EA7681CBB0377001507DD;
+			remoteInfo = orderMe;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2B13B0271E064472004A09D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -105,6 +116,8 @@
 		4390A4582031D58A00E1CD80 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43A8036E203EDF5F005C6EB6 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessibilityIdentifiers.swift; path = Model/AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = View/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A72F69F72AE6AD18001ED684 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72F69F92AE6AD18001ED684 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +137,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A72F69F42AE6AD18001ED684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -140,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA76B1CBB0377001507DD /* orderMe */,
+				A72F69F82AE6AD18001ED684 /* OrderMEUITests */,
 				2B2EA76A1CBB0377001507DD /* Products */,
 				ED4E7941F9C50F3BEA03680F /* Frameworks */,
 			);
@@ -149,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA7691CBB0377001507DD /* OrderME.app */,
+				A72F69F72AE6AD18001ED684 /* OrderMEUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +281,14 @@
 			name = JsonTransforms;
 			sourceTree = "<group>";
 		};
+		A72F69F82AE6AD18001ED684 /* OrderMEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A72F69F92AE6AD18001ED684 /* OrderMEUITests.swift */,
+			);
+			path = OrderMEUITests;
+			sourceTree = "<group>";
+		};
 		ED4E7941F9C50F3BEA03680F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,13 +327,31 @@
 			productReference = 2B2EA7691CBB0377001507DD /* OrderME.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A72F69F62AE6AD18001ED684 /* OrderMEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72F6A012AE6AD18001ED684 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */;
+			buildPhases = (
+				A72F69F32AE6AD18001ED684 /* Sources */,
+				A72F69F42AE6AD18001ED684 /* Frameworks */,
+				A72F69F52AE6AD18001ED684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72F69FE2AE6AD18001ED684 /* PBXTargetDependency */,
+			);
+			name = OrderMEUITests;
+			productName = OrderMEUITests;
+			productReference = A72F69F72AE6AD18001ED684 /* OrderMEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2B2EA7611CBB0377001507DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Boris Gurtovoy";
 				TargetAttributes = {
@@ -315,6 +363,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					A72F69F62AE6AD18001ED684 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2B2EA7681CBB0377001507DD;
 					};
 				};
 			};
@@ -338,6 +390,7 @@
 			projectRoot = "";
 			targets = (
 				2B2EA7681CBB0377001507DD /* orderMe */,
+				A72F69F62AE6AD18001ED684 /* OrderMEUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -350,6 +403,13 @@
 				43B95CEC2059716B00E8C016 /* LaunchScreen.storyboard in Resources */,
 				2B2EA7A21CBB03F7001507DD /* Main.storyboard in Resources */,
 				2B2EA7B51CBB0542001507DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72F69F52AE6AD18001ED684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +463,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A72F69F32AE6AD18001ED684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72F69FA2AE6AD18001ED684 /* OrderMEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72F69FE2AE6AD18001ED684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2EA7681CBB0377001507DD /* orderMe */;
+			targetProxy = A72F69FD2AE6AD18001ED684 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2B2EA7791CBB0377001507DD /* Debug */ = {
@@ -575,6 +651,72 @@
 			};
 			name = Release;
 		};
+		A72F69FF2AE6AD18001ED684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X3Q3V696V;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prokuda.test.OrderMEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = orderMe;
+			};
+			name = Debug;
+		};
+		A72F6A002AE6AD18001ED684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X3Q3V696V;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prokuda.test.OrderMEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = orderMe;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +734,15 @@
 			buildConfigurations = (
 				2B2EA77C1CBB0377001507DD /* Debug */,
 				2B2EA77D1CBB0377001507DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72F6A012AE6AD18001ED684 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72F69FF2AE6AD18001ED684 /* Debug */,
+				A72F6A002AE6AD18001ED684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
