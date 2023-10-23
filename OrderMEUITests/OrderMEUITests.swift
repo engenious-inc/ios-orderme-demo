@@ -35,18 +35,17 @@ final class OrderMEUITests: XCTestCase {
         
         app.launch()
         
-        loginLaterButton.tap()
         system.buttons["Allow Once"].tap()
-        oceanSeafoodRest.tap()
-        detectTableOption.tap()
-        tableNumberField.tap()
-        tableNumberField.typeText("3")
-        selectTableButton.tap()
-        callWaiterOption.tap()
-        bringMenuAlertButton.tap()
+        oceanSeafoodRest.wait().tap()
+        detectTableOption.wait().tap()
+        tableNumberField.wait().tap()
+        tableNumberField.wait().typeText("3")
+        selectTableButton.wait().tap()
+        callWaiterOption.wait().tap()
+        bringMenuAlertButton.wait().tap()
         
         XCTAssertEqual(alert.label, "Got it!")
         
-        okAlertButton.tap()
+        okAlertButton.wait().tap()
     }
 }

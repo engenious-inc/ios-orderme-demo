@@ -58,6 +58,7 @@
 		A7140F212A96D0D1007FF2D6 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F202A96D0D1007FF2D6 /* FacebookLogin */; };
 		A7140F232A96D0D1007FF2D6 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = A7140F222A96D0D1007FF2D6 /* FacebookShare */; };
 		A72F69FA2AE6AD18001ED684 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F69F92AE6AD18001ED684 /* OrderMEUITests.swift */; };
+		A72F6A032AE6C152001ED684 /* XCUITestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72F6A022AE6C152001ED684 /* XCUITestExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		43B95CEB2059716B00E8C016 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = View/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72F69F72AE6AD18001ED684 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72F69F92AE6AD18001ED684 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
+		A72F6A022AE6C152001ED684 /* XCUITestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestExtension.swift; sourceTree = "<group>"; };
 		EDDBFC792085FA8700A45B71 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBFC7B2085FA9200A45B71 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				A72F69F92AE6AD18001ED684 /* OrderMEUITests.swift */,
+				A72F6A022AE6C152001ED684 /* XCUITestExtension.swift */,
 			);
 			path = OrderMEUITests;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72F6A032AE6C152001ED684 /* XCUITestExtension.swift in Sources */,
 				A72F69FA2AE6AD18001ED684 /* OrderMEUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
