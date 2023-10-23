@@ -8,10 +8,8 @@
 
 import XCTest
 
-final class OrderMEUITests: XCTestCase {
+final class OrderMEUITests: BaseTest {
     
-    private lazy var system = XCUIApplication(bundleIdentifier: "com.apple.springboard")
-    private lazy var app = XCUIApplication()
     private lazy var loginLaterButton = app.buttons["loginLaterButton"].firstMatch
     private lazy var oceanSeafoodRest = app.tables.cells.staticTexts["Ocean Seafood"].firstMatch
     private lazy var detectTableOption = app.collectionViews.cells["Detect table"].firstMatch
@@ -24,7 +22,7 @@ final class OrderMEUITests: XCTestCase {
     
     override func setUpWithError() throws {
         continueAfterFailure = false
-
+        deleteApp()
     }
 
     override func tearDownWithError() throws {
@@ -34,7 +32,7 @@ final class OrderMEUITests: XCTestCase {
     func testBringMenu() throws {
         
         app.launch()
-        
+        loginLaterButton.wait().tap()
         system.buttons["Allow Once"].tap()
         oceanSeafoodRest.wait().tap()
         detectTableOption.wait().tap()
