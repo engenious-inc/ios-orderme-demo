@@ -27,7 +27,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb371530346532127</string>
+				<string>fb947267746898179</string>
 			</array>
 		</dict>
 	</array>
@@ -48,7 +48,7 @@
 		</array>
 	</dict>
 	<key>FacebookAppID</key>
-	<string>371530346532127</string>
+	<string>947267746898179</string>
 	<key>FacebookDisplayName</key>
 	<string>OrderMe</string>
 	<key>LSApplicationCategoryType</key>
@@ -59,6 +59,7 @@
 		<string>fb-messenger-api</string>
 		<string>fbauth2</string>
 		<string>fbshareextension</string>
+        <string>fb-messenger-share-api</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
