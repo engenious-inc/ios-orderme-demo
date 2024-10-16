@@ -20,7 +20,21 @@ final class OrderMEUITests: XCTestCase {
 
         app.tables.staticTexts["Romanov"].tap()
         app.collectionViews.cells["Detect table"].otherElements.containing(.image, identifier:"qrcode").element.tap()
-        app.textFields["tableNumberTextField"].tap()
+
+        let tableNumberField = app.textFields["tableNumberTextField"]
+
+        tableNumberField.tap()
+        tableNumberField.typeText("3")
+
         app.buttons["Select table"].tap()
+
+        app.collectionViews.staticTexts["Call a waiter"].tap()
+
+        let waiterAlert = app.alerts["The waiter is on his way"]
+        waiterAlert.buttons["Bring a menu"].tap()
+
+        let gotItAlert = app.alerts["Got it!"]
+
+        XCTAssert(gotItAlert.waitForExistence(timeout: 2), "Got it alert is not present")
     }
 }
