@@ -10,11 +10,14 @@ import XCTest
 
 final class OrderMEUITests: XCTestCase {
     func testExample() throws {
-        // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        let system = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+
         app.launch()
         app.staticTexts["Login Later"].tap()
-        app.alerts["Allow “OrderMe” to use your location?"].scrollViews.otherElements.buttons["Allow Once"].tap()
+
+        system.alerts.firstMatch.buttons["Allow Once"].tap()
+
         app.tables.staticTexts["Romanov"].tap()
         app.collectionViews.cells["Detect table"].otherElements.containing(.image, identifier:"qrcode").element.tap()
         app.textFields["tableNumberTextField"].tap()
