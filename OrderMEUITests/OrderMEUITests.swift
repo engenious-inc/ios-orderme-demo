@@ -13,7 +13,11 @@ final class OrderMEUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.staticTexts["Login Later"].tap()
+        app.alerts["Allow “OrderMe” to use your location?"].scrollViews.otherElements.buttons["Allow Once"].tap()
+        app.tables.staticTexts["Romanov"].tap()
+        app.collectionViews.cells["Detect table"].otherElements.containing(.image, identifier:"qrcode").element.tap()
+        app.textFields["tableNumberTextField"].tap()
+        app.buttons["Select table"].tap()
     }
 }
