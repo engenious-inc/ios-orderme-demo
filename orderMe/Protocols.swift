@@ -37,3 +37,14 @@ protocol NewOrderProtocol {
 protocol AccessibilityEnabling {
     func setupAccessibilityLabels()
 }
+
+// MARK: returns true when program runs on simulator and false when on the real device
+struct Platform {
+    static var isSimulator: Bool {
+    #if targetEnvironment(simulator)
+        return true
+    #else
+        return false
+    #endif
+    }
+}
